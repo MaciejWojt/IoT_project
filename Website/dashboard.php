@@ -31,16 +31,16 @@ $data = $stmt->fetch();
         <table class="table table-striped">
             <thead class="table-dark">
                 <tr>
-                    <th>Timestamp</th>
-                    <th>Temperature (°C)</th>
-                    <th>Humidity (%)</th>
+                    <th class="text-center">Timestamp</th>
+                    <th class="text-center">Temperature (°C)</th>
+                    <th class="text-center">Humidity (%)</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td><?= htmlspecialchars($formatted_timestamp) ?></td>
-                    <td><?= htmlspecialchars($data['temperature']) ?> °C</td>
-                    <td><?= htmlspecialchars($data['humidity']) ?> %</td>
+                    <td class="text-center"><?= htmlspecialchars($formatted_timestamp) ?></td>
+                    <td class="text-center"><?= htmlspecialchars($data['temperature']) ?> °C</td>
+                    <td class="text-center"><?= htmlspecialchars($data['humidity']) ?> %</td>
                 </tr>
             </tbody>
         </table>
